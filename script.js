@@ -6,6 +6,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            facedown: true,
         }
     },
     {
@@ -381,6 +382,7 @@ let cards = [
         bottom: "",
         keywords: {
             flip: true,
+            facedown: true,
         }
     },
     {
@@ -391,6 +393,7 @@ let cards = [
         bottom: "",
         keywords: {
             play: true,
+            facedown: true,
         }
     },
     {
@@ -401,6 +404,7 @@ let cards = [
         bottom: "",
         keywords: {
             shift: true,
+            facedown: true,
         }
     },
     {
@@ -452,6 +456,7 @@ let cards = [
         bottom: "",
         keywords: {
             delete: true,
+            facedown: true,
         }
     },
     {
@@ -659,6 +664,7 @@ let cards = [
         bottom: "",
         keywords: {
             play: true,
+            facedown: true,
         }
     },
     {
@@ -691,6 +697,7 @@ let cards = [
         bottom: "",
         keywords: {
             shift: true,
+            facedown: true,
         }
     },
     {
@@ -711,6 +718,7 @@ let cards = [
         bottom: "",
         keywords: {
             play: true,
+            facedown: true,
         }
     },
     {
@@ -837,6 +845,7 @@ let cards = [
         keywords: {
             delete: true,
             play: true,
+            facedown: true,
         }
     },
     {
@@ -858,6 +867,7 @@ let cards = [
         keywords: {
             draw: true,
             flip: true,
+            facedown: true,
         }
     },
     {
@@ -868,6 +878,7 @@ let cards = [
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, play the top card of your deck face-down in another line.</div>",
         keywords: {
             play: true,
+            facedown: true,
         }
     },
     {
@@ -922,6 +933,7 @@ let cards = [
             flip: true,
             reveal: true,
             shift: true,
+            facedown: true,
         }
     },
     {
@@ -932,6 +944,7 @@ let cards = [
         bottom: "",
         keywords: {
             shift: true,
+            facedown: true,
         }
     },
     {
@@ -1101,6 +1114,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            facedown: true,
         }
     },
     {
@@ -1208,8 +1222,8 @@ let cards = [
         middle: "Draw 1 card. Play 1 card face-down.",
         bottom: "",
         keywords: {
-            discard: true,
-            play: true
+            play: true,
+            facedown: true,
         }
     },
     {
@@ -1300,6 +1314,7 @@ let cards = [
         keywords: {
             delete: true,
             flip: true,
+            facedown: true,
         }
     },
     {
@@ -1332,6 +1347,7 @@ let cards = [
         bottom: "<div><span class='emphasis'>Start:</span> Flip this card.</div>",
         keywords: {
             flip: true,
+            facedown: true,
         }
     },
     {
@@ -1385,6 +1401,7 @@ let cards = [
         bottom: "",
         keywords: {
             play: true,
+            facedown: true,
         }
     },
     {
@@ -1413,6 +1430,7 @@ let cards = [
         bottom: "",
         keywords: {
             play: true,
+            facedown: true,
         }
     },
     {
@@ -1423,6 +1441,7 @@ let cards = [
         bottom: "",
         keywords: {
             shift: true,
+            facedown: true,
         }
     },
     {
@@ -1484,6 +1503,7 @@ let cards = [
         bottom: "",
         keywords: {
             shift: true,
+            facedown: true,
         }
     },
     {
@@ -1711,6 +1731,7 @@ let cards = [
         keywords: {
             discard: true,
             draw: true,
+            facedown: true,
         }
     },
     {
@@ -1751,6 +1772,7 @@ let cards = [
         bottom: "",
         keywords: {
             play: true,
+            facedown: true,
         }
     },
     {
@@ -1860,13 +1882,13 @@ function checkFilters() {
 
     let [zero, one, two, three, four, five, six] = checkValue();
 
-    let [deleteVar, discard, draw, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take] = checkKeywords();
+    let [deleteVar, discard, draw, facedown, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take] = checkKeywords();
 
     array = getProtocols(array, apathy, assimilation, chaos, clarity, corruption, courage, darkness, death, diversity, fear, fire, gravity, hate, ice, life, light, love, luck, metal, mirror, peace, plague, psychic, smoke, speed, spirit, time, unity, war, water);
 
     array = getValue(array, zero, one, two, three, four, five, six);
 
-    array = getKeywords(array, deleteVar, discard, draw, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take);
+    array = getKeywords(array, deleteVar, discard, draw, facedown, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take);
 
     displayCards(array);
 }
@@ -1922,6 +1944,7 @@ function checkKeywords() {
     let deleteVar = $('.js_delete').is(':checked');
     let discard = $('.js_discard').is(':checked');
     let draw = $('.js_draw').is(':checked');
+    let facedown = $('.js_facedown').is(':checked');
     let flip = $('.js_flip').is(':checked');
     let give = $('.js_give').is(':checked');
     let play = $('.js_play').is(':checked');
@@ -1933,7 +1956,7 @@ function checkKeywords() {
     let swap = $('.js_swap').is(':checked');
     let take = $('.js_take').is(':checked');
 
-    return [deleteVar, discard, draw, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take];
+    return [deleteVar, discard, draw, facedown,flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take];
 }
 
 function getProtocols(array, apathy, assimilation, chaos, clarity, corruption, courage, darkness, death, diversity, fear, fire, gravity, hate, ice, life, light, love, luck, metal, mirror, peace, plague, psychic, smoke, speed, spirit, time, unity, war, water) {
@@ -2057,7 +2080,7 @@ function getValue(array, zero, one, two, three, four, five, six) {
     return array;
 }
 
-function getKeywords(array, deleteVar, discard, draw, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take) {
+function getKeywords(array, deleteVar, discard, draw, facedown, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take) {
     if (deleteVar) {
         array = array.filter(cards => cards.keywords.delete == true);
     }
@@ -2066,6 +2089,9 @@ function getKeywords(array, deleteVar, discard, draw, flip, give, play, rearrang
     }
     if (draw) {
         array = array.filter(cards => cards.keywords.draw == true);
+    }
+    if (facedown) {
+        array = array.filter(cards => cards.keywords.facedown == true);
     }
     if (flip) {
         array = array.filter(cards => cards.keywords.flip == true);
