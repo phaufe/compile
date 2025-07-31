@@ -426,7 +426,7 @@ let cards = [
     {
         protocol: "Death",
         value: 1,
-        top: "<div><span class='emphasis'>Start:</span> You may draw 1 card. If you do, delete 1 other card, then delete this card.</div>",
+        top: "<div><span class='emphasis'>Start:</span> You may draw 1 card. If you do, delete 1 other card. Then delete this card.</div>",
         middle: "",
         bottom: "",
         keywords: {
@@ -591,7 +591,7 @@ let cards = [
         value: 0,
         top: "",
         middle: "Flip 1 other card. Draw 2 cards.",
-        bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, draw 1 card and flip 1 other card.</div>",
+        bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, draw 1 card.Then, flip 1 other card.</div>",
         keywords: {
             draw: true,
             flip: true,
@@ -738,7 +738,7 @@ let cards = [
         protocol: "Hate",
         value: 2,
         top: "",
-        middle: "Delete your highest value card. Delete your opponent's highest value card.",
+        middle: "Delete your highest value uncovered card. Delete your opponent's highest value uncovered card.",
         bottom: "",
         keywords: {
             delete: true,
@@ -831,9 +831,9 @@ let cards = [
     {
         protocol: "Life",
         value: 0,
-        top: "",
+        top: "<div><span class='emphasis'>End:</span> If this card is covered, delete this card.</div>",
         middle: "Play the top card of your deck face-down in each line where you have a card.",
-        bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, delete this card.</div>",
+        bottom: "",
         keywords: {
             delete: true,
             play: true,
@@ -1088,7 +1088,7 @@ let cards = [
         protocol: "Metal",
         value: 1,
         top: "",
-        middle: "Draw 2 cards. Your opponent cannot compile next turn.",
+        middle: "Draw 2 cards. Your opponent cannot compile on their next turn.",
         bottom: "",
         keywords: {
             draw: true,
@@ -1510,7 +1510,7 @@ let cards = [
     {
         protocol: "Spirit",
         value: 1,
-        top: "You can play cards in any line.",
+        top: "When you play cards face-up, they may be played without matching protocols.",
         middle: "Draw 2 cards.",
         bottom: "<div><span class='emphasis'>Start:</span> Either discard 1 card or flip this card.</div>",
         keywords: {
