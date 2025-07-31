@@ -29,13 +29,34 @@
     margin: .75rem;
   }
   .card--apathy {
-    background: #514F4D;
+    background: #948B82;
+  }
+  .card--assimilation {
+    background: #99D974;
+  }
+  .card--chaos {
+    background: #E075E9;
+  }
+  .card--clarity {
+    background: #CDE0DC;
+  }  
+  .card--corruption {
+    background: #79C251;
+  }
+  .card--courage {
+    background: #FE7647;
   }
   .card--darkness {
     background: #343434;
   }
   .card--death {
     background: #301934;
+  }
+  .card--diversity {
+    background: #41B668;
+  }  
+  .card--fear {
+    background: #DC8228;
   }
   .card--fire {
     background: #D22B2B;
@@ -46,6 +67,9 @@
   .card--hate {
     background: #874245;
   }
+  .card--ice {
+    background: #A059A5;
+  }  
   .card--life {
     background: #088F8F;
   }
@@ -55,8 +79,17 @@
   .card--love {
     background: #E16465;
   }
+  .card--luck {
+    background: #5CC5E1;
+  }  
   .card--metal {
     background: #808080;
+  }
+  .card--mirror {
+    background: #E92D5F;
+  }  
+  .card--peace {
+    background: #BBB540;
   }
   .card--plague {
     background: #097969;
@@ -64,16 +97,27 @@
   .card--psychic {
     background: #800080;
   }
+  .card--smoke {
+    background: #06AD9B;
+  }
   .card--speed {
     background: #7393B3;
   }
   .card--spirit {
     background: #00008B;
   }
+  .card--time {
+    background: #EA5F5A;
+  }
+  .card--unity {
+    background: #85388c;
+  }  
+  .card--war {
+    background: #33191E;
+  }
   .card--water {
     background: #0047AB;
   }
-
   .card__top {
     display: flex;
   }

@@ -59,6 +59,299 @@ let cards = [
         }
     },
     {
+        protocol: "Assimilation",
+        value: 0,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Assimilation",
+        value: 1,
+        top: "",
+        middle: "Discard 1 card. Refresh.",
+        bottom: "<div><span class='emphasis'>After a player refreshes:</span> Draw the top card of your opponents deck. Discard 1 card into their trash.</div>",
+        keywords: {
+            discard: true,
+            refresh: true,
+            draw: true,
+        }
+    },
+    {
+        protocol: "Assimilation",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Assimilation",
+        value: 3,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Assimilation",
+        value: 4,
+        top: "",
+        middle: "Draw the top card of your opponent´s deck. Your opponent draws the top card of your deck.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Assimilation",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Chaos",
+        value: 0,
+        top: "",
+        middle: "In eath line, flip 1 card.",
+        bottom: "<div><span class='emphasis'>Start:</span> Draw the of card of your opponent´s deck. Your opponent draws the top card of your deck.</div>",
+        keywords: {
+            flip: true,
+        }
+    },
+    {
+        protocol: "Chaos",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Chaos",
+        value: 2,
+        top: "",
+        middle: "Shift 1 of your covered cards.",
+        bottom: "",
+        keywords: {
+            shift: true,
+        }
+    },
+    {
+        protocol: "Chaos",
+        value: 3,
+        top: "",
+        middle: "",
+        bottom: "This card may be played without matching protocols.",
+        keywords: {
+            play: true,
+        }
+    },
+    {
+        protocol: "Chaos",
+        value: 4,
+        top: "",
+        middle: "",
+        bottom: "<div><span class='emphasis'>End:</span> Discard your hand. Draw that many cards.</div>",
+        keywords: {
+            discard: true,
+            draw: true,
+        }
+    },
+    {
+        protocol: "Chaos",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Clarity",
+        value: 0,
+        top: "Your total value in this line is increased by 1 for each card in your hand.",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Clarity",
+        value: 1,
+        top: "<div><span class='emphasis'>Start:</span> Reveal the top card of your deck. You may discard the top card of your deck.</div>",
+        middle: "Your opponent reveals their hand.",
+        bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, draw 3 cards.</div>",
+        keywords: {
+            discard: true,
+            reveal: true,
+            draw: true,
+        }
+    },
+    {
+        protocol: "Clarity",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },    {
+        protocol: "Clarity",
+        value: 3,
+        top: "",
+        middle: "Reveal your deck. Draw 1 card with a value of 5 revealed this way. Shuffle your deck.",
+        bottom: "",
+        keywords: {
+            discard: true,
+            reveal: true,
+            draw: true,
+        }
+    },
+    {
+        protocol: "Clarity",
+        value: 4,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Clarity",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Corruption",
+        value: 0,
+        top: "<div><span class='emphasis'>Start:</span> Flip 1 face-up covered or uncovered card in this stack other than this card.</div>",
+        middle: "",
+        bottom: "You may play this card in any line on either player´s side.",
+        keywords: {
+            flip: true,
+            play: true,
+        }
+    },
+    {
+        protocol: "Corruption",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Corruption",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Corruption",
+        value: 3,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Corruption",
+        value: 4,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Corruption",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Courage",
+        value: 0,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Courage",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Courage",
+        value: 2,
+        top: "",
+        middle: "Draw 1 card.",
+        bottom: "<div><span class='emphasis'>End:</span> If your opponent has a highter total value than you do in this line, draw 1 card.</div>",
+        keywords: {
+            draw: true,
+        }
+    },
+    {
+        protocol: "Courage",
+        value: 3,
+        top: "",
+        middle: "",
+        bottom: "<div><span class='emphasis'>End:</span> You may shift this card to the line where your opponent has their highest total value.</div> ",
+        keywords: {
+            shift: true,
+        }
+    },
+    {
+        protocol: "Courage",
+        value: 4,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Courage",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
         protocol: "Darkness",
         value: 0,
         top: "",
@@ -173,6 +466,118 @@ let cards = [
     },
     {
         protocol: "Death",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Diversity",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Diversity",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Diversity",
+        value: 3,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Diversity",
+        value: 4,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Diversity",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Diversity",
+        value: 6,
+        top: "<div><span class='emphasis'>End:</span> If there are not at least 3 different protocols on cards in the field, delete this card.</div>",
+        middle: "",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Fear",
+        value: 0,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Fear",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Fear",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Fear",
+        value: 0,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Fear",
+        value: 3,
+        top: "",
+        middle: "Your opponent discards 1 random card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Fear",
         value: 5,
         top: "",
         middle: "You discard 1 card.",
@@ -370,6 +775,60 @@ let cards = [
         }
     },
     {
+        protocol: "Ice",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Ice",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Ice",
+        value: 3,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Ice",
+        value: 4,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Ice",
+        value: 5,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Ice",
+        value: 6,
+        top: "If you have any cards in your hand, you cannot draw cards.",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
         protocol: "Life",
         value: 0,
         top: "",
@@ -560,6 +1019,62 @@ let cards = [
         }
     },
     {
+        protocol: "Luck",
+        value: 0,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Luck",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Luck",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Luck",
+        value: 3,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Luck",
+        value: 4,
+        top: "",
+        middle: "Discard the top card of your deck. Delete 1 covered or uncovered card that shares a value with the discarded card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Luck",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
         protocol: "Metal",
         value: 0,
         top: "Your opponent's total value in this line is reduced by 2.",
@@ -617,6 +1132,122 @@ let cards = [
         bottom: "",
         keywords: {
             delete: true,
+        }
+    },
+    {
+        protocol: "Mirror",
+        value: 0,
+        top: "Your total value in this line is increased by 1 for each of your opponent´s cards in this line.",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Mirror",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "<div><span class='emphasis'>End:</span> You may resolve the middle command of 1 of your opponent´s cards as if it were on this card.</div>",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Mirror",
+        value: 2,
+        top: "",
+        middle: "Swap all of your cards in one of your stacks with another one of your stacks.",
+        bottom: "",
+        keywords: {
+            swap: true,
+        }
+    },
+    {
+        protocol: "Mirror",
+        value: 3,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Mirror",
+        value: 4,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Mirror",
+        value:5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Peace",
+        value: 1,
+        top: "",
+        middle: "Both players discard their hand.",
+        bottom: "<div><span class='emphasis'>End:</span> If your hand is empty, draw 1 card.</div>",
+        keywords: {
+            discard: true,
+            draw: true,
+        }
+    },
+    {
+        protocol: "Peace",
+        value: 2,
+        top: "",
+        middle: "Draw 1 card. Play 1 card face-down.",
+        bottom: "",
+        keywords: {
+            discard: true,
+            play: true
+        }
+    },
+    {
+        protocol: "Peace",
+        value: 3,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Peace",
+        value: 4,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Peace",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Peace",
+        value: 6,
+        top: "",
+        middle: "If you have more then 1 card in your hand, flip this card",
+        bottom: "",
+        keywords: {
+            flip: true,
         }
     },
     {
@@ -738,6 +1369,64 @@ let cards = [
     },
     {
         protocol: "Psychic",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Smoke",
+        value: 0,
+        top: "",
+        middle: "Play the top card of your deck face-down in each line with a face-down card.",
+        bottom: "",
+        keywords: {
+            play: true,
+        }
+    },
+    {
+        protocol: "Smoke",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Smoke",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Smoke",
+        value: 3,
+        top: "",
+        middle: "Play 1 card dace-down in a line with a face-down card.",
+        bottom: "",
+        keywords: {
+            play: true,
+        }
+    },
+    {
+        protocol: "Smoke",
+        value: 4,
+        top: "",
+        middle: "Shif 1 covered face-down card.",
+        bottom: "",
+        keywords: {
+            shift: true,
+        }
+    },
+    {
+        protocol: "Smoke",
         value: 5,
         top: "",
         middle: "You discard 1 card.",
@@ -871,6 +1560,180 @@ let cards = [
         }
     },
     {
+        protocol: "Time",
+        value: 0,
+        top: "",
+        middle: "Play 1 card from your trash. Shuffle your trash into your deck.",
+        bottom: "",
+        keywords: {
+            play: true,
+        }
+    },
+    {
+        protocol: "Time",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Time",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Time",
+        value: 3,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Time",
+        value: 4,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Time",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "Unity",
+        value: 0,
+        top: "",
+        middle: "If there is another Unity card in the field, either flip 1 card of draw 1 card.",
+        bottom: "<div><span class='emphasis'>When this card would be flipped by a Unity card:</span> First flip one card of draw 1 card.</div>",
+        keywords: {
+            discard: true,
+            flip: true,
+        }
+    },
+    {
+        protocol: "Unity",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Unity",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Unity",
+        value: 3,
+        top: "",
+        middle: "If there is another Unity card in the field, you may flip 1 card.",
+        bottom: "",
+        keywords: {
+            flip: true,
+        }
+    },
+    {
+        protocol: "Unity",
+        value: 4,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Unity",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "War",
+        value: 0,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "War",
+        value: 1,
+        top: "",
+        middle: "",
+        bottom: "<div><span class='emphasis'>After your opponent refreshed:</span> Discard any number of cards. Refresh.</div>",
+        keywords: {
+            discard: true,
+            refresh: true,
+        }
+    },
+    {
+        protocol: "War",
+        value: 2,
+        top: "",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "War",
+        value: 3,
+        top: "",
+        middle: "Draw 1 card.",
+        bottom: "<div><span class='emphasis'>After your opponent discards cards:</span> You may play 1 card face-down.</div>",
+        keywords: {
+            discard: true,
+            draw: true,
+        }
+    },
+    {
+        protocol: "War",
+        value: 4,
+        top: "",
+        middle: "Your opponent discards 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
+        protocol: "War",
+        value: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+            discard: true,
+        }
+    },
+    {
         protocol: "Water",
         value: 0,
         top: "",
@@ -957,6 +1820,22 @@ $(".js_remove-all-protocol").click(function() {
     $(".js_protocol").prop("checked", false);
     checkFilters();
 })
+$(".js_select-main1-protocol").click(function() {
+    $(".js_darkness, .js_death, .js_fire, .js_gravity, .js_life, .js_light, .js_metal, .js_plague, .js_psychic, .js_speed, .js_spirit, .js_water").prop("checked", true);
+    checkFilters();
+})
+$(".js_select-aux1-protocol").click(function() {
+    $(".js_apathy, .js_hate, .js_love").prop("checked", true);
+    checkFilters();
+})
+$(".js_select-main2-protocol").click(function() {
+    $(".js_chaos, .js_clarity, .js_corruption, .js_courage, .js_fear, .js_ice, .js_luck, .js_mirror, .js_peace, .js_smoke, .js_time, .js_war").prop("checked", true);
+    checkFilters();
+})
+$(".js_select-aux2-protocol").click(function() {
+    $(".js_assimilation, .js_diversity, .js_unity").prop("checked", true);
+    checkFilters();
+})
 $(".js_select-all-value").click(function() {
     $(".js_value").prop("checked", true);
     checkFilters();
@@ -977,13 +1856,13 @@ $(".js_remove-all-keywords").click(function() {
 function checkFilters() {
     let array = cards;
 
-    let [apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water] = checkProtocols();
+    let [apathy, assimilation, chaos, clarity, corruption, courage, darkness, death, diversity, fear, fire, gravity, hate, ice, life, light, love, luck, metal, mirror, peace, plague, psychic, smoke, speed, spirit, time, unity, war, water] = checkProtocols();
 
     let [zero, one, two, three, four, five, six] = checkValue();
 
     let [deleteVar, discard, draw, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take] = checkKeywords();
 
-    array = getProtocols(array, apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water);
+    array = getProtocols(array, apathy, assimilation, chaos, clarity, corruption, courage, darkness, death, diversity, fear, fire, gravity, hate, ice, life, light, love, luck, metal, mirror, peace, plague, psychic, smoke, speed, spirit, time, unity, war, water);
 
     array = getValue(array, zero, one, two, three, four, five, six);
 
@@ -994,22 +1873,37 @@ function checkFilters() {
 
 function checkProtocols() {
     let apathy = $('.js_apathy').is(':checked');
+    let assimilation = $('.js_assimilation').is(':checked');
+    let chaos = $('.js_chaos').is(':checked');
+    let clarity = $('.js_clarity').is(':checked');
+    let corruption = $('.js_corruption').is(':checked');
+    let courage = $('.js_courage').is(':checked');
     let darkness = $('.js_darkness').is(':checked');
     let death = $('.js_death').is(':checked');
+    let diversity = $('.js_diversity').is(':checked');
+    let fear = $('.js_fear').is(':checked');
     let fire = $('.js_fire').is(':checked');
     let gravity = $('.js_gravity').is(':checked');
     let hate = $('.js_hate').is(':checked');
+    let ice = $('.js_ice').is(':checked');
     let life = $('.js_life').is(':checked');
     let light = $('.js_light').is(':checked');
     let love = $('.js_love').is(':checked');
+    let luck = $('.js_luck').is(':checked');
     let metal = $('.js_metal').is(':checked');
+    let mirror = $('.js_mirror').is(':checked');
+    let peace = $('.js_peace').is(':checked');
     let plague = $('.js_plague').is(':checked');
     let psychic = $('.js_psychic').is(':checked');
+    let smoke = $('.js_smoke').is(':checked');
     let speed = $('.js_speed').is(':checked');
     let spirit = $('.js_spirit').is(':checked');
+    let time = $('.js_time').is(':checked');
+    let unity = $('.js_unity').is(':checked');
+    let war = $('.js_war').is(':checked');
     let water = $('.js_water').is(':checked');
 
-    return [apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water];
+    return [apathy, assimilation, chaos, clarity, corruption, courage, darkness, death, diversity, fear, fire, gravity, hate, ice, life, light, love, luck, metal, mirror, peace, plague, psychic, smoke, speed, spirit, time, unity, war, water];
 };
 
 function checkValue() {
@@ -1042,12 +1936,33 @@ function checkKeywords() {
     return [deleteVar, discard, draw, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take];
 }
 
-function getProtocols(array, apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water) {
+function getProtocols(array, apathy, assimilation, chaos, clarity, corruption, courage, darkness, death, diversity, fear, fire, gravity, hate, ice, life, light, love, luck, metal, mirror, peace, plague, psychic, smoke, speed, spirit, time, unity, war, water) {
     if (!apathy) {
         array = array.filter(cards => cards.protocol != "Apathy");
     }
+    if (!assimilation) {
+        array = array.filter(cards => cards.protocol != "Assimilation");
+    }
+    if (!chaos) {
+        array = array.filter(cards => cards.protocol != "Chaos");
+    }
+    if (!clarity) {
+        array = array.filter(cards => cards.protocol != "Clarity");
+    }
+    if (!corruption) {
+        array = array.filter(cards => cards.protocol != "Corruption");
+    }
+    if (!courage) {
+        array = array.filter(cards => cards.protocol != "Courage");
+    }
     if (!darkness) {
         array = array.filter(cards => cards.protocol != "Darkness");
+    }
+    if (!diversity) {
+        array = array.filter(cards => cards.protocol != "Diversity");
+    }
+    if (!fear) {
+        array = array.filter(cards => cards.protocol != "Fear");
     }
     if (!death) {
         array = array.filter(cards => cards.protocol != "Death");
@@ -1061,6 +1976,9 @@ function getProtocols(array, apathy, darkness, death, fire, gravity, hate, life,
     if (!hate) {
         array = array.filter(cards => cards.protocol != "Hate");
     }
+    if (!ice) {
+        array = array.filter(cards => cards.protocol != "Ice");
+    }
     if (!life) {
         array = array.filter(cards => cards.protocol != "Life");
     }
@@ -1070,8 +1988,17 @@ function getProtocols(array, apathy, darkness, death, fire, gravity, hate, life,
     if (!love) {
         array = array.filter(cards => cards.protocol != "Love");
     }
+    if (!luck) {
+        array = array.filter(cards => cards.protocol != "Luck");
+    }
     if (!metal) {
         array = array.filter(cards => cards.protocol != "Metal");
+    }
+    if (!mirror) {
+        array = array.filter(cards => cards.protocol != "Mirror");
+    }
+    if (!peace) {
+        array = array.filter(cards => cards.protocol != "Peace");
     }
     if (!plague) {
         array = array.filter(cards => cards.protocol != "Plague");
@@ -1079,11 +2006,23 @@ function getProtocols(array, apathy, darkness, death, fire, gravity, hate, life,
     if (!psychic) {
         array = array.filter(cards => cards.protocol != "Psychic");
     }
+    if (!smoke) {
+        array = array.filter(cards => cards.protocol != "Smoke");
+    }
     if (!speed) {
         array = array.filter(cards => cards.protocol != "Speed");
     }
     if (!spirit) {
         array = array.filter(cards => cards.protocol != "Spirit");
+    }
+    if (!time) {
+        array = array.filter(cards => cards.protocol != "Time");
+    }
+    if (!unity) {
+        array = array.filter(cards => cards.protocol != "Unity");
+    }
+    if (!war) {
+        array = array.filter(cards => cards.protocol != "War");
     }
     if (!water) {
         array = array.filter(cards => cards.protocol != "Water");
