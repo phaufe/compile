@@ -122,19 +122,21 @@ let cards = [
         protocol: "Chaos",
         value: 0,
         top: "",
-        middle: "In eath line, flip 1 card.",
+        middle: "In each line, flip 1 covered card.",
         bottom: "<div><span class='emphasis'>Start:</span> Draw the of card of your opponent´s deck. Your opponent draws the top card of your deck.</div>",
         keywords: {
             flip: true,
+            draw: true,
         }
     },
     {
         protocol: "Chaos",
         value: 1,
         top: "",
-        middle: "",
+        middle: "Rearrange your protocols. Rearrange your opponent´s protocols",
         bottom: "",
         keywords: {
+            rearrange: true,
         }
     },
     {
@@ -203,9 +205,12 @@ let cards = [
         protocol: "Clarity",
         value: 2,
         top: "",
-        middle: "",
+        middle: "Reveal your deck. Draw 1 card with a value of 1 revealed this way. Shuffle your deck. Play 1 card with a value of 1.",
         bottom: "",
         keywords: {
+            reveal: true,
+            draw: true,
+            play: true,
         }
     },    {
         protocol: "Clarity",
@@ -214,7 +219,6 @@ let cards = [
         middle: "Reveal your deck. Draw 1 card with a value of 5 revealed this way. Shuffle your deck.",
         bottom: "",
         keywords: {
-            discard: true,
             reveal: true,
             draw: true,
         }
@@ -223,7 +227,7 @@ let cards = [
         protocol: "Clarity",
         value: 4,
         top: "",
-        middle: "",
+        middle: "You may shuffle your trash into your deck.",
         bottom: "",
         keywords: {
         }
@@ -253,36 +257,31 @@ let cards = [
         protocol: "Corruption",
         value: 1,
         top: "",
-        middle: "",
-        bottom: "",
+        middle: "Return 1 card.",
+        bottom: "<div><span class='emphasis'>When a card would be returned to your opponent´s hand:</span> Put that card on top of their deck face-down instead.</div>",
         keywords: {
+            return: true,
         }
     },
     {
         protocol: "Corruption",
         value: 2,
-        top: "",
-        middle: "",
+        top: "<div><span class='emphasis'>After you discard cards:</span> Your opponent discards 1 card.</div>",
+        middle: "Draw 1 card. Discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
+            draw: true,
         }
     },
     {
         protocol: "Corruption",
         value: 3,
         top: "",
-        middle: "",
+        middle: "You may flip 1 face-up covered card.",
         bottom: "",
         keywords: {
-        }
-    },
-    {
-        protocol: "Corruption",
-        value: 4,
-        top: "",
-        middle: "",
-        bottom: "",
-        keywords: {
+            flip: true,
         }
     },
     {
@@ -295,22 +294,36 @@ let cards = [
             discard: true,
         }
     },
-    {
-        protocol: "Courage",
-        value: 0,
-        top: "",
+     {
+        protocol: "Corruption",
+        value: 6,
+        top: "<div><span class='emphasis'>End:</span> Either discard 1 card or delete this card.</div>",
         middle: "",
         bottom: "",
         keywords: {
+            discard: true,
+            delete: true,
+        }
+    },   
+    {
+        protocol: "Courage",
+        value: 0,
+        top: "<div><span class='emphasis'>Start:</span> If you have no cards in hand, draw 1 card.</div>",
+        middle: "Draw 1 card.",
+        bottom: "<div><span class='emphasis'>End:</span> You may discard 1 card. If you do, your opponent discards 1 card.</div>",
+        keywords: {
+            draw: true,
+            discard: true,
         }
     },
     {
         protocol: "Courage",
         value: 1,
         top: "",
-        middle: "",
+        middle: "Delete 1 of your opponent´s cards in a line where they have a highter total value than you do",
         bottom: "",
         keywords: {
+            delete: true,
         }
     },
     {
@@ -335,15 +348,6 @@ let cards = [
     },
     {
         protocol: "Courage",
-        value: 4,
-        top: "",
-        middle: "",
-        bottom: "",
-        keywords: {
-        }
-    },
-    {
-        protocol: "Courage",
         value: 5,
         top: "",
         middle: "You discard 1 card.",
@@ -352,6 +356,15 @@ let cards = [
             discard: true,
         }
     },
+     {
+        protocol: "Courage",
+        value: 6,
+        top: "<div><span class='emphasis'>End:</span> If your opponent has a higher value in this line than you do, flip this card.</div>",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },   
     {
         protocol: "Darkness",
         value: 0,
@@ -538,42 +551,47 @@ let cards = [
     {
         protocol: "Fear",
         value: 0,
-        top: "",
-        middle: "",
+        top: "During your turn, your opponent´s cards do not have middle commands.",
+        middle: "Shift or flip 1 card.",
         bottom: "",
         keywords: {
+            shift: true,
+            flip: true,
         }
     },
     {
         protocol: "Fear",
         value: 1,
         top: "",
-        middle: "",
+        middle: "Draw 2 cards. Your opponent discards their hand and draws the amount of cards discarded minus 1.",
         bottom: "",
         keywords: {
+            draw: true,
+            discard: true,
         }
     },
     {
         protocol: "Fear",
         value: 2,
         top: "",
-        middle: "",
+        middle: "Return 1 of your opponent´s cards.",
         bottom: "",
         keywords: {
-        }
-    },
-    {
-        protocol: "Fear",
-        value: 0,
-        top: "",
-        middle: "",
-        bottom: "",
-        keywords: {
+            return: true,
         }
     },
     {
         protocol: "Fear",
         value: 3,
+        top: "",
+        middle: "Shift 1 of your opponent´s covered or uncovered cards in this line.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Fear",
+        value: 4,
         top: "",
         middle: "Your opponent discards 1 random card.",
         bottom: "",
@@ -786,27 +804,32 @@ let cards = [
         protocol: "Ice",
         value: 1,
         top: "",
-        middle: "",
-        bottom: "",
+        middle: "You may shift this card.",
+        bottom: "<div><span class='emphasis'>After your opponent plays a card in this line:</span> Your opponent discards 1 card.</div>",
         keywords: {
+            shift: true,
+            play: true,
+            discard: true,
         }
     },
     {
         protocol: "Ice",
         value: 2,
         top: "",
-        middle: "",
+        middle: "Shift 1 other card.",
         bottom: "",
         keywords: {
+            shift: true,
         }
     },
     {
         protocol: "Ice",
         value: 3,
-        top: "",
+        top: "<div><span class='emphasis'>End:</span> If this card is covered, you may shift it.</div>",
         middle: "",
         bottom: "",
         keywords: {
+            shift: true,
         }
     },
     {
@@ -814,17 +837,19 @@ let cards = [
         value: 4,
         top: "",
         middle: "",
-        bottom: "",
+        bottom: "This card cannot be flipped.",
         keywords: {
+            flip: true,
         }
     },
     {
         protocol: "Ice",
         value: 5,
         top: "",
-        middle: "",
+        middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -1408,18 +1433,21 @@ let cards = [
         protocol: "Smoke",
         value: 1,
         top: "",
-        middle: "",
+        middle: "Flip 1 of your cards. You may shift that card.",
         bottom: "",
         keywords: {
+            flip: true,
+            shift: true,
         }
     },
     {
         protocol: "Smoke",
         value: 2,
-        top: "",
+        top: "Your total value in this line is increased by 1 for each face-down card in this line.",
         middle: "",
         bottom: "",
         keywords: {
+            facedown: true,
         }
     },
     {
@@ -1593,36 +1621,44 @@ let cards = [
         protocol: "Time",
         value: 1,
         top: "",
-        middle: "",
+        middle: "Flip 1 covered card. Discard your entire deck.",
         bottom: "",
         keywords: {
+            flip: true,
+            discard: true,
         }
     },
     {
         protocol: "Time",
         value: 2,
-        top: "",
-        middle: "",
+        top: "<div><span class='emphasis'>After you shuffle your deck:</span> Draw 1 card and you may shift this card.</div>",
+        middle: "If there are any csrds in your trash, you may shuffle your trash into your deck.",
         bottom: "",
         keywords: {
+            draw: true,
+            shift: true,
         }
     },
     {
         protocol: "Time",
         value: 3,
         top: "",
-        middle: "",
+        middle: "Reveal 1 card from your trash. Play it face-down in another line.",
         bottom: "",
         keywords: {
+            reveal: true,
+            facedown: true,
         }
     },
     {
         protocol: "Time",
         value: 4,
         top: "",
-        middle: "",
+        middle: "Draw 2 cards. Discard 2 cards.",
         bottom: "",
         keywords: {
+            draw: true,
+            discard: true,
         }
     },
     {
@@ -1696,10 +1732,14 @@ let cards = [
     {
         protocol: "War",
         value: 0,
-        top: "",
+        top: "<div><span class='emphasis'>After you refresh:</span> You may flip this card.</div>",
         middle: "",
-        bottom: "",
+        bottom: "<div><span class='emphasis'>After your opponent draws cards:</span> You may delete 1 card.</div>",
         keywords: {
+            refresh: true,
+            flip: true,
+            draw: true,
+            delete: true,
         }
     },
     {
@@ -1707,7 +1747,7 @@ let cards = [
         value: 1,
         top: "",
         middle: "",
-        bottom: "<div><span class='emphasis'>After your opponent refreshed:</span> Discard any number of cards. Refresh.</div>",
+        bottom: "<div><span class='emphasis'>After your opponent refreshes:</span> Discard any number of cards. Refresh.</div>",
         keywords: {
             discard: true,
             refresh: true,
@@ -1717,9 +1757,11 @@ let cards = [
         protocol: "War",
         value: 2,
         top: "",
-        middle: "",
-        bottom: "",
+        middle: "Flip 1 card.",
+        bottom: "<div><span class='emphasis'>After your opponent compiles:</span> Your opponent discards their hand.</div>",
         keywords: {
+            flip: true,
+            discard: true,
         }
     },
     {
