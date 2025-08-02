@@ -1991,7 +1991,7 @@ function checkValue() {
     let two = $('.js_two').is(':checked');
     let three = $('.js_three').is(':checked');
     let four = $('.js_four').is(':checked');
-    //let five = $('.js_five').is(':checked');
+    let five = $('.js_five').is(':checked');
     let six = $('.js_six').is(':checked');
 
     return [zero, one, two, three, four, five, six];
