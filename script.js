@@ -123,7 +123,7 @@ let cards = [
         value: 0,
         top: "",
         middle: "In each line, flip 1 covered card.",
-        bottom: "<div><span class='emphasis'>Start:</span> Draw the of card of your opponent´s deck. Your opponent draws the top card of your deck.</div>",
+        bottom: "<div><span class='emphasis'>Start:</span> Draw the top card of your opponent´s deck. Your opponent draws the top card of your deck.</div>",
         keywords: {
             flip: true,
             draw: true,
@@ -133,7 +133,7 @@ let cards = [
         protocol: "Chaos",
         value: 1,
         top: "",
-        middle: "Rearrange your protocols. Rearrange your opponent´s protocols",
+        middle: "Rearrange your protocols. Rearrange your opponent´s protocols.",
         bottom: "",
         keywords: {
             rearrange: true,
@@ -1060,36 +1060,45 @@ let cards = [
         protocol: "Luck",
         value: 0,
         top: "",
-        middle: "",
+        middle: "State a number. Draw 3 cards. Reveal 1 card drawn with the face-up value of your stated number. You may play it",
         bottom: "",
         keywords: {
+            draw: true,
+            reveal: true,
+            play: true,
         }
     },
     {
         protocol: "Luck",
         value: 1,
         top: "",
-        middle: "",
+        middle: "Play the top card of your deck face-down. Flip that card, ignoring its middle commands.",
         bottom: "",
         keywords: {
+            play: true,
+            flip: true,
         }
     },
     {
         protocol: "Luck",
         value: 2,
         top: "",
-        middle: "",
+        middle: "Discard the top card of your deck. Draw cards equal to the value of the discarded card.",
         bottom: "",
         keywords: {
+            discard: true,
+            draw: true,
         }
     },
     {
         protocol: "Luck",
         value: 3,
         top: "",
-        middle: "",
+        middle: "State a protocol. Discard the top card of your opponent´s deck. If the discarded card matches the stated protocol, delete 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
+            delete: true,
         }
     },
     {
@@ -1214,7 +1223,7 @@ let cards = [
         protocol: "Mirror",
         value: 4,
         top: "",
-        middle: "",
+        middle: "Flip 1 of your cards. Flip 1 of your opponent´s cards in the same line.",
         bottom: "",
         keywords: {
         }
@@ -1255,9 +1264,11 @@ let cards = [
         protocol: "Peace",
         value: 3,
         top: "",
-        middle: "",
+        middle: "You may discard 1 card. Flip 1 card thas has a value greater than the number of cards in your hand.",
         bottom: "",
         keywords: {
+            discard: true,
+            flip: true,
         }
     },
     {
@@ -1265,8 +1276,10 @@ let cards = [
         value: 4,
         top: "",
         middle: "",
-        bottom: "",
+        bottom: "<div><span class='emphasis'>After you discard cards during your opponent´s turn:</span> Draw 1 card.</div>",
         keywords: {
+            discard: true,
+            draw: true,
         }
     },
     {
