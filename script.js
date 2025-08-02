@@ -1214,18 +1214,20 @@ let cards = [
         protocol: "Mirror",
         value: 3,
         top: "",
-        middle: "",
+        middle: "Flip 1 of your cards. Flip 1 of your opponent´s cards in the same line.",
         bottom: "",
         keywords: {
+            flip: true,
         }
     },
     {
         protocol: "Mirror",
         value: 4,
         top: "",
-        middle: "Flip 1 of your cards. Flip 1 of your opponent´s cards in the same line.",
-        bottom: "",
+        middle: "",
+        bottom: "<div><span class='emphasis'>After your opponent draws cards:</span> Draw 1 card.</div>",
         keywords: {
+            draw: true,
         }
     },
     {
