@@ -73,7 +73,7 @@ let cards = [
         value: 1,
         top: "",
         middle: "Discard 1 card. Refresh.",
-        bottom: "<div><span class='emphasis'>After a player refreshes:</span> Draw the top card of your opponents deck. Discard 1 card into their trash.</div>",
+        bottom: "<div><span class='emphasis'>After a player refreshes:</span> Draw the top card of your opponent´s deck. Discard 1 card into their trash.</div>",
         keywords: {
             discard: true,
             refresh: true,
@@ -1690,7 +1690,7 @@ let cards = [
         protocol: "Unity",
         value: 0,
         top: "",
-        middle: "If there is another Unity card in the field, either flip 1 card of draw 1 card.",
+        middle: "If there is another Unity card in the field, either flip 1 card or draw 1 card.",
         bottom: "<div><span class='emphasis'>When this card would be flipped by a Unity card:</span> First flip one card of draw 1 card.</div>",
         keywords: {
             discard: true,
