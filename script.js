@@ -1647,7 +1647,7 @@ let cards = [
         protocol: "Time",
         value: 2,
         top: "<div><span class='emphasis'>After you shuffle your deck:</span> Draw 1 card and you may shift this card.</div>",
-        middle: "If there are any csrds in your trash, you may shuffle your trash into your deck.",
+        middle: "If there are any cards in your trash, you may shuffle your trash into your deck.",
         bottom: "",
         keywords: {
             draw: true,
