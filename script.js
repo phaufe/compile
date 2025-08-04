@@ -1691,7 +1691,7 @@ let cards = [
         value: 0,
         top: "",
         middle: "If there is another Unity card in the field, either flip 1 card or draw 1 card.",
-        bottom: "<div><span class='emphasis'>When this card would be flipped by a Unity card:</span> First flip one card of draw 1 card.</div>",
+        bottom: "<div><span class='emphasis'>When this card would be flipped by a Unity card:</span> First flip one card or draw 1 card.</div>",
         keywords: {
             discard: true,
             flip: true,
