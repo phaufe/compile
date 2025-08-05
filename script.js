@@ -1109,6 +1109,7 @@ let cards = [
         bottom: "",
         keywords: {
             discard: true,
+            delete: true,
         }
     },
     {
