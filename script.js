@@ -1060,7 +1060,7 @@ let cards = [
         protocol: "Luck",
         value: 0,
         top: "",
-        middle: "State a number. Draw 3 cards. Reveal 1 card drawn with the face-up value of your stated number. You may play it",
+        middle: "State a number. Draw 3 cards. Reveal 1 card drawn with the face-up value of your stated number. You may play it.",
         bottom: "",
         keywords: {
             draw: true,
@@ -1470,7 +1470,7 @@ let cards = [
         protocol: "Smoke",
         value: 3,
         top: "",
-        middle: "Play 1 card dace-down in a line with a face-down card.",
+        middle: "Play 1 card face-down in a line with a face-down card.",
         bottom: "",
         keywords: {
             play: true,
@@ -1481,7 +1481,7 @@ let cards = [
         protocol: "Smoke",
         value: 4,
         top: "",
-        middle: "Shif 1 covered face-down card.",
+        middle: "Shift 1 covered face-down card.",
         bottom: "",
         keywords: {
             shift: true,
