@@ -33,7 +33,7 @@ let cards = [
         protocol: "Apathy",
         value: 3,
         top: "",
-        middle: "Flip 1 of your opponent's face-up cards.",
+        middle: "Flip 1 of your opponent´s face-up cards.",
         bottom: "",
         keywords: {
             flip: true,
@@ -63,9 +63,10 @@ let cards = [
         protocol: "Assimilation",
         value: 0,
         top: "",
-        middle: "",
+        middle: "Put 1 of your opponent´s covered or uncovered face-down cards into your hand.",
         bottom: "",
         keywords: {
+            facedown: true,
         }
     },
     {
@@ -369,7 +370,7 @@ let cards = [
         protocol: "Darkness",
         value: 0,
         top: "",
-        middle: "Draw 3 cards. Shift 1 of your opponent's covered cards.",
+        middle: "Draw 3 cards. Shift 1 of your opponent´s covered cards.",
         bottom: "",
         keywords: {
             draw: true,
@@ -380,7 +381,7 @@ let cards = [
         protocol: "Darkness",
         value: 1,
         top: "",
-        middle: "Flip 1 of your opponent's cards. You may shift that card.",
+        middle: "Flip 1 of your opponent´s cards. You may shift that card.",
         bottom: "",
         keywords: {
             flip: true,
@@ -523,9 +524,10 @@ let cards = [
         protocol: "Diversity",
         value: 4,
         top: "",
-        middle: "",
+        middle: "Flip 1 card with a vlaue less than the number of different protocols on cards in the field.",
         bottom: "",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -764,7 +766,7 @@ let cards = [
         protocol: "Hate",
         value: 2,
         top: "",
-        middle: "Delete your highest value uncovered card. Delete your opponent's highest value uncovered card.",
+        middle: "Delete your highest value uncovered card. Delete your opponent´s highest value uncovered card.",
         bottom: "",
         keywords: {
             delete: true,
@@ -930,7 +932,7 @@ let cards = [
         protocol: "Light",
         value: 0,
         top: "",
-        middle: "Flip 1 card. Draw cards equal to that card's value.",
+        middle: "Flip 1 card. Draw cards equal to that card´s value.",
         bottom: "",
         keywords: {
             draw: true,
@@ -996,7 +998,7 @@ let cards = [
         protocol: "Love",
         value: 1,
         top: "",
-        middle: "Draw the top card of your opponent's deck.",
+        middle: "Draw the top card of your opponent´s deck.",
         bottom: "<div><span class='emphasis'>End:</span> You may give 1 card from your hand to your opponent. If you do, draw 2 cards.</div>",
         keywords: {
             draw: true,
@@ -1018,7 +1020,7 @@ let cards = [
         protocol: "Love",
         value: 3,
         top: "",
-        middle: "Take 1 random card from your opponent's hand. Give 1 card from your hand to your opponent.",
+        middle: "Take 1 random card from your opponent´s hand. Give 1 card from your hand to your opponent.",
         bottom: "",
         keywords: {
             give: true,
@@ -1125,7 +1127,7 @@ let cards = [
     {
         protocol: "Metal",
         value: 0,
-        top: "Your opponent's total value in this line is reduced by 2.",
+        top: "Your opponent´s total value in this line is reduced by 2.",
         middle: "Flip 1 card.",
         bottom: "",
         keywords: {
@@ -1418,7 +1420,7 @@ let cards = [
         value: 4,
         top: "",
         middle: "",
-        bottom: "<div><span class='emphasis'>End:</span> You may return 1 of your opponent's cards. If you do, flip this card.</div>",
+        bottom: "<div><span class='emphasis'>End:</span> You may return 1 of your opponent´s cards. If you do, flip this card.</div>",
         keywords: {
             flip: true,
             return: true,
@@ -1543,7 +1545,7 @@ let cards = [
         protocol: "Speed",
         value: 4,
         top: "",
-        middle: "Shift 1 of your opponent's face-down cards.",
+        middle: "Shift 1 of your opponent´s face-down cards.",
         bottom: "",
         keywords: {
             shift: true,
@@ -1701,10 +1703,13 @@ let cards = [
     {
         protocol: "Unity",
         value: 1,
-        top: "",
-        middle: "",
-        bottom: "",
+        top: "<div><span class='emphasis'>Start:</span> If this card is covered, you may shift this card.",
+        middle: "If there are 5 or more Unity cards in the field, flip the Unity protocol to the compiled side and delete all cards in that line.",
+        bottom: "Unity cards may be played face-up in this line.",
         keywords: {
+            shift: true,
+            compile: true,
+            faceup: true,
         }
     },
     {
@@ -1946,7 +1951,7 @@ function checkFilters() {
 
     array = getValue(array, zero, one, two, three, four, five, six);
 
-    array = getKeywords(array, deleteVar, discard, draw, facedown, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take);
+    array = getKeywords(array, deleteVar, discard, draw, facedown, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take, compile);
 
     displayCards(array);
 }
@@ -2013,6 +2018,7 @@ function checkKeywords() {
     let shift = $('.js_shift').is(':checked');
     let swap = $('.js_swap').is(':checked');
     let take = $('.js_take').is(':checked');
+    let take = $('.js_compile').is(':checked');
 
     return [deleteVar, discard, draw, facedown,flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take];
 }
@@ -2181,7 +2187,9 @@ function getKeywords(array, deleteVar, discard, draw, facedown, flip, give, play
     if (take) {
         array = array.filter(cards => cards.keywords.take == true);
     }
-
+    if (compile) {
+        array = array.filter(cards => cards.keywords.compile == true);
+    }
     return array;
 }
 
