@@ -2018,7 +2018,7 @@ function checkKeywords() {
     let shift = $('.js_shift').is(':checked');
     let swap = $('.js_swap').is(':checked');
     let take = $('.js_take').is(':checked');
-    let take = $('.js_compile').is(':checked');
+    let compile = $('.js_compile').is(':checked');
 
     return [deleteVar, discard, draw, facedown,flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take, compile];
 }
