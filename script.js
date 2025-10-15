@@ -2020,7 +2020,7 @@ function checkKeywords() {
     let take = $('.js_take').is(':checked');
     let take = $('.js_compile').is(':checked');
 
-    return [deleteVar, discard, draw, facedown,flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take];
+    return [deleteVar, discard, draw, facedown,flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take, compile];
 }
 
 function getProtocols(array, apathy, assimilation, chaos, clarity, corruption, courage, darkness, death, diversity, fear, fire, gravity, hate, ice, life, light, love, luck, metal, mirror, peace, plague, psychic, smoke, speed, spirit, time, unity, war, water) {
@@ -2144,7 +2144,7 @@ function getValue(array, zero, one, two, three, four, five, six) {
     return array;
 }
 
-function getKeywords(array, deleteVar, discard, draw, facedown, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take) {
+function getKeywords(array, deleteVar, discard, draw, facedown, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take, compile) {
     if (deleteVar) {
         array = array.filter(cards => cards.keywords.delete == true);
     }
