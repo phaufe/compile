@@ -1142,6 +1142,7 @@ let cards = [
         bottom: "",
         keywords: {
             draw: true,
+            compile: true,
         }
     },
     {
@@ -1783,6 +1784,7 @@ let cards = [
         keywords: {
             flip: true,
             discard: true,
+            compile: true,
         }
     },
     {
