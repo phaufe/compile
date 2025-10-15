@@ -1704,7 +1704,7 @@ let cards = [
     {
         protocol: "Unity",
         value: 1,
-        top: "<div><span class='emphasis'>Start:</span> If this card is covered, you may shift this card.",
+        top: "<div><span class='emphasis'>Start:</span> If this card is covered, you may shift this card.</div>",
         middle: "If there are 5 or more Unity cards in the field, flip the Unity protocol to the compiled side and delete all cards in that line.",
         bottom: "Unity cards may be played face-up in this line.",
         keywords: {
