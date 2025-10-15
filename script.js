@@ -1947,7 +1947,7 @@ function checkFilters() {
 
     let [zero, one, two, three, four, five, six] = checkValue();
 
-    let [deleteVar, discard, draw, facedown, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take] = checkKeywords();
+    let [deleteVar, discard, draw, facedown, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take, compile] = checkKeywords();
 
     array = getProtocols(array, apathy, assimilation, chaos, clarity, corruption, courage, darkness, death, diversity, fear, fire, gravity, hate, ice, life, light, love, luck, metal, mirror, peace, plague, psychic, smoke, speed, spirit, time, unity, war, water);
 
