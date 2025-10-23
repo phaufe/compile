@@ -86,7 +86,7 @@ let cards = [
         value: 2,
         top: "",
         middle: "",
-        bottom: "<div><span class='emphasis'>End:</span>Play the top card of your opponent´s deck face down in this stack.  </div>",
+        bottom: "<div><span class='emphasis'>End:</span> Play the top card of your opponent´s deck face down in this stack.  </div>",
         keywords: {
         }
     },
