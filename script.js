@@ -86,16 +86,7 @@ let cards = [
         value: 2,
         top: "",
         middle: "",
-        bottom: "",
-        keywords: {
-        }
-    },
-    {
-        protocol: "Assimilation",
-        value: 3,
-        top: "",
-        middle: "",
-        bottom: "",
+        bottom: "<div><span class='emphasis'>End:</span>Play the top card of your opponent´s deck face down in this stack.  </div>",
         keywords: {
         }
     },
@@ -117,6 +108,15 @@ let cards = [
         bottom: "",
         keywords: {
             discard: true,
+        }
+    },
+    {
+        protocol: "Assimilation",
+        value: 6,
+        top: "",
+        middle: "",
+        bottom: "<div><span class='emphasis'>End:</span> Play the top card of your deck face-down on your opponent´s side.</div>",
+        keywords: {
         }
     },
     {
@@ -495,18 +495,18 @@ let cards = [
     },
     {
         protocol: "Diversity",
-        value: 1,
+        value: 0,
         top: "",
-        middle: "",
-        bottom: "",
+        middle: "If there are 6 different protocols on cards in the field, flip the Diversity protocol to the compiled side.",
+        bottom: "<div><span class='emphasis'>End:</span> You may play 1 non-Diversity card in this line.</div>",
         keywords: {
         }
     },
     {
         protocol: "Diversity",
-        value: 2,
+        value: 1,
         top: "",
-        middle: "",
+        middle: "Shift 1 card. Draw cards equal to the number of different protocols in this line.",
         bottom: "",
         keywords: {
         }
@@ -514,7 +514,7 @@ let cards = [
     {
         protocol: "Diversity",
         value: 3,
-        top: "",
+        top: "Your total value in this line is increased by 2 if there are any non-Diversity face-up cards in this stack.",
         middle: "",
         bottom: "",
         keywords: {
@@ -524,7 +524,7 @@ let cards = [
         protocol: "Diversity",
         value: 4,
         top: "",
-        middle: "Flip 1 card with a vlaue less than the number of different protocols on cards in the field.",
+        middle: "Flip 1 card with a value less than the number of different protocols on cards in the field.",
         bottom: "",
         keywords: {
             flip: true,
@@ -1695,7 +1695,7 @@ let cards = [
         value: 0,
         top: "",
         middle: "If there is another Unity card in the field, either flip 1 card or draw 1 card.",
-        bottom: "<div><span class='emphasis'>When this card would be flipped by a Unity card:</span> First flip one card or draw 1 card.</div>",
+        bottom: "<div><span class='emphasis'>When this card would be covered by a Unity card:</span> First, either flip 1 card or draw 1 card.</div>",
         keywords: {
             discard: true,
             flip: true,
@@ -1717,7 +1717,7 @@ let cards = [
         protocol: "Unity",
         value: 2,
         top: "",
-        middle: "",
+        middle: "Draw cards equal to the number of Unity cards in the field.",
         bottom: "",
         keywords: {
         }
@@ -1726,7 +1726,7 @@ let cards = [
         protocol: "Unity",
         value: 3,
         top: "",
-        middle: "If there is another Unity card in the field, you may flip 1 card.",
+        middle: "If there is another Unity card in the field, you may flip 1 face-up card.",
         bottom: "",
         keywords: {
             flip: true,
@@ -1735,7 +1735,7 @@ let cards = [
     {
         protocol: "Unity",
         value: 4,
-        top: "",
+        top: "<div><span class='emphasis'>Start:</span> If you hand is empty, reveal your deck, draw all Unity cards from it, and shuffle your deck.</div>",
         middle: "",
         bottom: "",
         keywords: {
