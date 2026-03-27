@@ -500,6 +500,7 @@ let cards = [
         middle: "If there are 6 different protocols on cards in the field, flip the Diversity protocol to the compiled side.",
         bottom: "<div><span class='emphasis'>End:</span> You may play 1 non-Diversity card in this line.</div>",
         keywords: {
+            compile: true,
         }
     },
     {
@@ -649,7 +650,7 @@ let cards = [
         value: 3,
         top: "",
         middle: "",
-        bottom: "<div><span class='empahsis'>End:</span> You may discard 1 card. If you do, flip 1 card.</div>",
+        bottom: "<div><span class='emphasis'>End:</span> You may discard 1 card. If you do, flip 1 card.</div>",
         keywords: {
             discard: true,
             flip: true,
