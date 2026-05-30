@@ -781,6 +781,7 @@ let cards = [
         bottom: "",
         keywords: {
             draw: true,
+            delete: true,
         }
     },
     {
