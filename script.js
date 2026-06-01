@@ -88,6 +88,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>End:</span> Play the top card of your opponent´s deck face down in this stack.  </div>",
         keywords: {
+            facedown: true,
         }
     },
     {
@@ -98,6 +99,7 @@ let cards = [
         bottom: "",
         keywords: {
             discard: true,
+            draw: true,
         }
     },
     {
@@ -510,6 +512,8 @@ let cards = [
         middle: "Shift 1 card. Draw cards equal to the number of different protocols in this line.",
         bottom: "",
         keywords: {
+            shift: true,
+            draw: true,
         }
     },
     {
@@ -1606,6 +1610,7 @@ let cards = [
         bottom: "",
         keywords: {
             shift: true,
+            draw: true,
         }
     },
     {
@@ -1722,6 +1727,7 @@ let cards = [
         middle: "Draw cards equal to the number of Unity cards in the field.",
         bottom: "",
         keywords: {
+            draw: true,
         }
     },
     {
@@ -1741,6 +1747,8 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            reveal: true,
+            draw: true,
         }
     },
     {
