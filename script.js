@@ -98,7 +98,6 @@ let cards = [
         middle: "Draw the top card of your opponent´s deck. Your opponent draws the top card of your deck.",
         bottom: "",
         keywords: {
-            discard: true,
             draw: true,
         }
     },
